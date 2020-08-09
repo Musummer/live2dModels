@@ -33,7 +33,7 @@ $(document).on('copy', function (){
 function initTips() {
     $.ajax({
         cache: true,
-        url: "https://cdn.jsdelivr.net/gh/Musummer/live2dModels@v1.6/live2d/message.json",
+        url: "https://cdn.jsdelivr.net/gh/Musummer/live2dModels@v1.7/live2d/message.json",
         dataType: "json",
         success: function (result) {
             $.each(result.mouseover, function (index, tips) {
@@ -90,7 +90,7 @@ initTips();
             text = 'Hello! 来自 谷歌搜索 的朋友<br>欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
         }
     }else {
-        if (window.location.href == 'https://www.litblc.com/') { //如果是主页
+        if (window.location.href == '') { //如果是主页
             var now = (new Date()).getHours();
             if (now > 23 || now <= 5) {
                 text = '那么晚，赶紧睡觉了，不然血小板都救不了你!!';
