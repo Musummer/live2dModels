@@ -7783,4 +7783,3 @@
             }
     }
 ]);
-//# sourceMappingURL=live2d.js.map
