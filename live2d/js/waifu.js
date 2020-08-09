@@ -33,7 +33,7 @@ $(document).on('copy', function (){
 function initTips() {
     $.ajax({
         cache: true,
-        url: "https://cdn.jsdelivr.net/gh/Musummer/live2dModels@v1.4/live2d/message.json",
+        url: "https://cdn.jsdelivr.net/gh/Musummer/live2dModels@v1.6/live2d/message.json",
         dataType: "json",
         success: function (result) {
             $.each(result.mouseover, function (index, tips) {
