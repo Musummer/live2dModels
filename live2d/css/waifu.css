@@ -25,11 +25,11 @@
     padding: 5px 10px;
     top: -40px;
     text-align: center;
-    border: 1px solid rgba(224, 186, 140, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 12px;
-    background-color: rgba(236, 217, 188, 0.5);
-    box-shadow: 0 3px 15px 2px rgba(191, 158, 118, 0.2);
-    color: #606975;
+    background-color: rgba(255, 255, 255, 30);
+    box-shadow: 0 3px 15px 2px rgba(75, 75, 75, 50);
+    color: #fff8f1;
     font-size: 12px;
     font-weight: 400;
     text-overflow: ellipsis;
@@ -41,6 +41,7 @@
     animation-iteration-count: infinite;
     animation-name: shake;
     animation-timing-function: ease-in-out;
+    left:40px
 }
 
 .hide-button {
