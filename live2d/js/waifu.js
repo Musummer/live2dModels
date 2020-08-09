@@ -27,13 +27,13 @@ re.toString = function() {
 };
 
 $(document).on('copy', function (){
-    showMessage('你都复制了些什么呀，转载要记得加上出处哦', 5000, true);
+    showMessage('你都复制了些什么吖，转载要记得加上出处哦', 5000, true);
 });
 
 function initTips() {
     $.ajax({
         cache: true,
-        url: "live2d/message.json",
+        url: "https://cdn.jsdelivr.net/gh/Musummer/live2dModels@v1.4/live2d/message.json",
         dataType: "json",
         success: function (result) {
             $.each(result.mouseover, function (index, tips) {
@@ -93,7 +93,7 @@ initTips();
         if (window.location.href == 'https://www.litblc.com/') { //如果是主页
             var now = (new Date()).getHours();
             if (now > 23 || now <= 5) {
-                text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛';
+                text = '那么晚，赶紧睡觉了，不然血小板都救不了你!!';
             } else if (now > 5 && now <= 7) {
                 text = '早上好！一日之计在于晨，美好的一天就要开始了';
             } else if (now > 7 && now <= 11) {
@@ -112,7 +112,7 @@ initTips();
                 text = '嗨~ 快来逗我玩吧！';
             }
         }else {
-            text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+            text = '欢迎光临~这里是血小板<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
         }
     }
     showMessage(text, 6000);
